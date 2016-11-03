@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spooky Beach</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href='css/core2.css' rel='stylesheet' type='text/css'>
+    <link href='css/style1.css' rel='stylesheet' type='text/css'>
+    <link href='css/imageParticleTest.css' rel='stylesheet' type='text/css'>
+        
+	<script src="js/particles.min.js"></script>
+
+    <script>
+		window.onload = function() {
+			Particles.init({ options });
+		};
+	
+		// e.g.
+		window.onload = function() {
+			Particles.init({
+				selector: '#mainCanvas',
+				maxParticles: 330,  //default = 100
+				color: '#FFFFFF',  // must use a 6 digits
+				sizeVariations: 3,  //  default = 3
+				speed: 0.1,  // default = 0.5
+				minDistance: 100, //  default = 120 // I suspect this acually may be maximum distance
+				connectParticles: false  //  default = false
+			});
+		};
+    </script>
+
+    <style>
+        html,
+        body {
+            margin: 0;
+        }
+
+        #mainCanvas {
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+    </style>
+
+
+</head>
+<body> <div class="container" style="z-index: 100;">
+    <h1>Full Screen</h1>
+    <h2>Spooky Manasota FL Beach</h2>
+    <p>Didn't think a Florida beach could be "spooky", did ya?</p>
+    <p><a href="#" class="ghost-button">Main Demo</a></p>
+</div>
+<canvas id="mainCanvas">
+
+ </canvas> 
+<!--  Google Analytics code  -->  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74783923-2', 'auto');
+  ga('send', 'pageview');
+</script>
+<!--  End Google Analytics Code -->
+  
+</body>
+</html>

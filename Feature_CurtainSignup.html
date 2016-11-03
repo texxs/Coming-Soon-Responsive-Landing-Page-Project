@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Curtain Signup Form</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href='css/core.css' rel='stylesheet' type='text/css'>
+    <link href='css/condensed.css' rel='stylesheet' type='text/css'>
+    <link href='css/imageSpookyBeach.css' rel='stylesheet' type='text/css'>
+    <link href='css/curtain.css' rel='stylesheet' type='text/css'>
+    <link href='css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.0.4/js.cookie.js"></script>
+
+
+
+    <script>
+	
+        $(document).ready( function() {
+
+
+			//  IMPORTANT!  //
+            Cookies.remove('curtainCookie');  // this line is for testing, remove it to make it work propa
+			// the above line removes the cookie that is set in the code below when the user clicks the "no thanks" button  that prevents the 
+			// signup form from being displayed for 7 days.
+			//  When you are done editing this pages content and testsing it, 
+			// remove (or comment out) the line so that the form may be hidden by the user semi-permanently.
+
+
+            // Step one: define functions
+			// raiseCurtain: Raise the curtain and 
+            // set cookie 
+
+            function raiseCurtain() {
+
+                $('#curtain').animate({
+
+                    top: "-100%"
+
+                }, 1000, function () {
+
+                    Cookies.set('curtainCookie', 'curtain', {
+
+                        expires: 7,  //  currently sets the cookie to prevent the display of the form for 7 days, change the number to your liking.
+
+                        path: '/'
+
+                    });
+
+                });
+
+            }
+
+
+
+            // If curtainCookie doesn't exist
+
+            // lower the curtain
+
+            if (Cookies.get('curtainCookie') != "curtain") {
+
+                $('#curtain').delay(2000).animate({
+
+                     top: "+30", left: "5%", width: "88%"  //changes the postion that the curtain animates to... want no change?  Erase everything except top: "+0" (erase the comma too).
+
+                }, 1000, function () {
+
+                    // done
+
+                });
+
+            }
+
+
+
+            // user clicks "No Thanks" button
+
+            // run the raiseCurtain function defined above
+
+            $('#quit').click(function () {
+
+                raiseCurtain();
+
+            });
+
+
+
+            // user subscribes
+
+            // delay, remove doormat
+
+            $('#ck_subscribe_button').click(function () {
+
+                setTimeout(closeDoorMat(), 3000);
+
+            });
+
+
+
+        });
+		
+    </script>
+
+    <!--[if lt IE 9]>
+    <script>
+
+        document.createElement('video');
+
+    </script>
+    <![endif]-->
+
+</head>
+
+
+
+<body>
+
+
+<div id="curtain">
+
+    <div id="curtainContainer">
+	  <div style="margin-bottom:50px;">
+        <h1 class="dark">Curtain Signup Form</h1>
+        <p class="dark">Signup below or click the button to remove this curtain style signup form for 7 days (7 days is disabled for this demo).</p>
+      </div>
+
+  	
+      <!--  <form><input type="text" size="55" style="max-width:93%;">&nbsp;&nbsp;&nbsp;<input type="button" value="SEND" class="dark-ghost-button"></form> -->
+		
+        <form action="//texxsmith.us4.list-manage.com/subscribe/post?u=e0af429fe7e103c90a45dd358&amp;id=cb2cb3236f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+                <div id="mc_embed_signup_scroll">
+                    <div class="mc-field-group">
+                        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="E-Mail Address" size="35" style="height:2em;"> <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="border-radius: 3px; height:2.5em;">
+                    </div>
+
+                    <div id="mce-responses" class="clear">
+                        <div class="response" id="mce-error-response" style="display:none"></div>
+                        <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e0af429fe7e103c90a45dd358_cb2cb3236f" tabindex="-1" value=""></div>
+                    <div class="clear"></div>
+                </div>
+            </form>
+
+
+        <p><a href="#" id="quit" class="dark-ghost-button">No Thanks</a></p>
+
+        <!--  <p class="dark"><span class="fa fa-chevron-circle-down bigChevron"></span></p> -->
+
+    </div>
+
+</div>
+
+
+<!--  ////////////   Original  markup  ////////////  -->
+
+
+<div id="bg_pattern"></div>
+
+
+
+<div class="container">
+
+    <h1>Main Content Area</h1>
+    <h2>Spooky Manasota Beach</h2>
+    <p>This is an example of the curtain signup form with a background image only, no video.</p>
+    <p><a href="#" class="ghost-button">Main Demo</a></p>
+
+</div>
+
+  
+
+<!--  Google Analytics code  -->  
+<script>
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+
+
+  ga('create', 'UA-74783923-2', 'auto');
+
+  ga('send', 'pageview');
+
+</script>
+<!--  End Google Analytics Code -->
+
+</body>
+
+</html>

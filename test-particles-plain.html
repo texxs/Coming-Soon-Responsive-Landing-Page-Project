@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Particles background</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/particles.min.js"></script>
+
+    <script>
+    window.onload = function() {
+        Particles.init({ options });
+    };
+
+    // e.g.
+    window.onload = function() {
+        Particles.init({
+            selector: '#mainCanvas',
+            maxParticles: 120,  //default = 100
+            color: '#FFFFFF',  // must use a 6 digits
+            sizeVariations: 4,  //  default = 3
+            speed: 0.1,  // default = 0.58
+            minDistance: 50, //  default = 120 // I suspect this acually may be maximum distance
+            connectParticles: true  //  default = false
+        });
+    };
+    </script>
+
+    <style>
+        html,
+        body {
+            margin: 0px;
+            background-color: #000000;
+        }
+
+        #myCanvas {
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+    </style>
+
+</head>
+<body>
+<h1 style="color:#FFFFFF; z-index: 1;">Something here</h1>
+<canvas id="mainCanvas">
+
+
+</canvas>
+
+</body>
+</html>
+
+<!--  based on  https://github.com/marcbruederlin/particles.js  -->

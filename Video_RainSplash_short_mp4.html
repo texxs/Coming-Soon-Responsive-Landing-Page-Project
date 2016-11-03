@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Full Screen Video BackGround, Rain Splash</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='css/core.css' rel='stylesheet' type='text/css'>
+    <link href='css/style1.css' rel='stylesheet' type='text/css'>
+    <link href='css/overlay.css' rel='stylesheet' type='text/css'>
+
+    <!--[if lt IE 9]>
+    <script>
+        document.createElement('video');
+    </script>
+    <![endif]-->
+
+</head>
+<body>
+<div id="bg_pattern"></div>
+    <video autoplay loop poster="poster.jpg" id="bgvid">
+        <source src="vids/rain/Rain_clip1.mp4" type="video/mp4">
+    </video>
+
+    <div class="container">
+        <h1>Rain Splash - Short</h1>
+        <h2>Default font set, .mp4 video format, without fallbacks</h2>
+        <p align="left"><small>HTML 5 best practices require different formats of each video to be included for different operating system/browser/device combinations, as fallbacks in case the first format isn't supported.  Only one that will be played will actually be loaded.  Almost all devices/browsers can handle all of them and will use the one listed first in the webpage's code.  Below you can see how these file formats effect quality and file size (which = loading time). </small></p>
+        <p><a href="Video_RainSplash_short_mp4.html">HD</a> (.mp4, 13.2 MB's) | <a href="Video_RainSplash_short_webm.html">SD</a> (.webm, 1.9MBs) | <a href="Video_RainSplash_short_ogg.html">LD</a> (.ogg, .7MBs)</p>
+        <p><a href="demo.html" class="ghost-button">DEMO PAGE</a>
+	</div>
+  
+<!--  Google Analytics code  -->  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74783923-2', 'auto');
+  ga('send', 'pageview');
+</script>
+<!--  End Google Analytics Code -->
+  
+</body>
+</html>
