@@ -1,0 +1,32 @@
+article {
+    border-color: #bbbbbb;
+    border-width: 2px;
+    border-radius: 4px;
+    border-style: outset;
+    padding: 11px 6px 6px 21px;
+    margin-top:15px;
+}
+#articleOne {
+    margin-top:15px;
+}
+
+code    {
+    background-color: lightblue;
+}
+
+.toTop  {
+    font-size: smaller;
+    text-align:right;
+    margin-right:18px;
+}
+
+
+.container  {
+    width:1180px;
+}
+.darkBody {
+  background-color:#000;
+}
+
+
+

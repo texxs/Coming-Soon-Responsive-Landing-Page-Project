@@ -1,0 +1,32 @@
+/* /////////////////////////////////////////////  */
+/*////////////   Cinzel  ///////////   */
+/* /////////////////////////////////////////////  */
+
+
+
+/*
+
+Created by the famous Texx Smith, the Einstein of Web design
+Visit me at http://texxsmith.com
+
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,900,700);
+/* The above has three different boldness levels to chose from 400, 700 and 900  */
+@import url(https://fonts.googleapis.com/css?family=Amiri);
+
+h1 {
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight:900;
+}
+
+h2 {
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight:700;
+}
+
+p  {
+    font-family: 'Amiri', serif;
+}
+
+

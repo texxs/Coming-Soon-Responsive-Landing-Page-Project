@@ -1,0 +1,27 @@
+/*//////////////////////////////////////////////  */
+/*////////////////   Julius  ///////////////////   */
+/*//////////////////////////////////////////////  */
+
+/*
+
+Created by the famous Texx Smith, the Einstein of Web design
+Visit me at http://texxsmith.com
+
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Julius+Sans+One);
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text);
+
+h1 {
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+h2 {
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+p  {
+    font-family: 'Crimson Text', serif;
+}
+
+

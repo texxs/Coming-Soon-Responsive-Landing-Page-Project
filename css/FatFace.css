@@ -1,0 +1,29 @@
+/* /////////////////////////////////////////////  */
+/*////////////   FatFace  ///////////   */
+/* /////////////////////////////////////////////  */
+
+
+
+/*
+
+Created by the famous Texx Smith, the Einstein of Web design
+Visit me at http://texxsmith.com
+
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Abril+Fatface);
+@import url(https://fonts.googleapis.com/css?family=Average);
+
+h1 {
+    font-family: 'Abril Fatface', cursive;
+}
+
+h2 {
+    font-family: 'Abril Fatface', cursive;
+}
+
+p  {
+    font-family: 'Average', serif;
+}
+
+

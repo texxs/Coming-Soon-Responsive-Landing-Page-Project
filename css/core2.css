@@ -1,0 +1,153 @@
+
+/*
+
+Created by the famous Texx Smith, the Einstein of Web design
+Visit me at http://texxsmith.com
+
+*/
+
+html, body {
+    color:#fff;
+    height: 100%;
+}
+
+.container {
+    max-width:80%;
+    margin: 0px auto 0px auto;
+    text-align:center;
+    padding-top:10%;  
+}
+
+/*/////////   Default text styles  //////////*/
+
+
+h1   {
+    font-size:4.5em;
+    color:#FFFFFF;
+}
+h2   {
+    font-size: 2em;
+    color:#FFFFFF;
+}
+p   {  
+    font-size:1.5em;
+    color:#FFFFFF;
+}
+
+a:link {
+    color:#FFFFFF;
+}
+a:visited {
+    color:#FFFFFF;
+}
+a:hover {
+    color:dodgerblue;
+}
+
+.dark {
+    color:#222222;
+}
+.dark a:link {
+    color:#222222;
+}
+.dark a:visited {
+    color:#222222;
+}
+
+
+.icons	{
+	font-size:2em;
+}
+/*/////////   Extras  //////////*/
+
+.ghost-button {
+  display: inline-block;
+  width: 200px;   /*  replace with left and right padding for bigger buttons  */
+  padding: 8px;
+  color: #fff;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  font-weight:bold;
+}
+
+.dark-ghost-button {
+  display: inline-block;
+  width: 200px;  /*  replace with left and right padding for bigger buttons  */
+  padding: 8px;
+  color: #111 !important;
+  border: 2px solid #111;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  font-weight:bold;
+}
+.ghost-button:hover,
+.ghost-button:active {
+  background-color: #fff;
+  color: #111;
+}
+.dark-ghost-button a:link   {
+	color:#111 !important;
+}
+.dark-ghost-button:hover,
+.dark-ghost-button:active {
+  background-color: #111;
+  color: #fff !important;
+}
+
+
+
+
+/*//////////////////////////////////////////////////////////////////////*/
+
+/*//////////    For Retina Devices     ///////////*/
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi) {
+    html    {
+        background: url(../images/posterR.jpg) no-repeat;
+        background-size:cover;
+        height:100%;
+    }
+}
+
+
+/* /////////    For small tablets and smaller screens below   ///////////  */
+
+@media screen and (max-device-width: 799px) {
+    html {
+        background: url(../images/posterM.jpg) #000 no-repeat center center fixed;
+        height: 100%;
+    }
+	body  {
+		top:0 !important;
+	}
+	
+  h1   {
+    font-size:2.5em;
+    color:#ffffff;
+  }
+  h2   {
+      font-size:1.5em;
+      color:#ffffff;
+  }
+  p   {
+    font-size:1em;
+    color:#ffffff;
+  }
+
+}
+
+@media screen and (max-device-width: 400px) {
+        html {
+        background: url(../images/posterM.jpg) #000 no-repeat center center fixed;
+        height: 100%;
+    }
+	
+	
+    h1   {
+        margin-left:1px;
+    }
+}

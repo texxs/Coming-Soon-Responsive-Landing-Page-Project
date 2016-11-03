@@ -1,0 +1,30 @@
+/* /////////////////////////////////////////////  */
+/*////////////        Ultra         ///////////   */
+/* /////////////////////////////////////////////  */
+
+
+
+/*
+
+Created by the famous Texx Smith, the Einstein of Web design
+Visit me at http://texxsmith.com
+
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Ultra);
+@import url(https://fonts.googleapis.com/css?family=Stint+Ultra+Expanded);
+@import url(https://fonts.googleapis.com/css?family=Slabo+13px);
+
+
+h1 {
+    font-family: 'Ultra', serif;
+}
+
+h2 {
+    font-family: 'Stint Ultra Expanded', cursive;
+}
+
+p  {
+    font-family: 'Slabo 13px', serif;
+}
+

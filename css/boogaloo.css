@@ -1,0 +1,30 @@
+/* /////////////////////////////////////////////  */
+/*////////////   Boogalo  ///////////   */
+/* /////////////////////////////////////////////  */
+
+
+
+/*
+
+Created by the famous Texx Smith, the Einstein of Web design
+Visit me at http://texxsmith.com
+
+*/
+
+
+@import url(https://fonts.googleapis.com/css?family=Boogaloo);
+@import url(https://fonts.googleapis.com/css?family=Gudea);
+
+h1 {
+    font-family: 'Boogaloo', cursive;
+}
+
+h2 {
+    font-family: 'Boogaloo', cursive;
+}
+
+p  {
+    font-family: 'Gudea', sans-serif;
+}
+
+

@@ -1,0 +1,63 @@
+
+
+/* ==== DOORMAT STYLES ==== */
+
+#doorMat {
+
+    background: white;
+
+    border-top: solid 10px #dd5638;
+
+    position: fixed;
+
+    height: 100%;
+
+    width: 100%;
+
+    z-index: 9999;
+
+    display: table;
+
+    top: -100%;
+
+    margin-top:-2%;
+
+}
+
+#doorMatContainer {
+
+    display: table-cell;
+
+    vertical-align: middle;
+
+    height: 100%;
+
+    padding: 0 20%;
+
+    text-align: center;
+
+}
+
+#doorMat p {
+
+    margin-bottom: -40px;
+
+}
+
+#doorMat #quit {
+
+    color: #444;
+
+    border: solid 1px #444;
+
+    margin-top: 80px;
+
+}
+
+
+
+.bigChevron     {
+
+    font-size: 4em !important;
+
+}

@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+
+html    {
+    background: url("../images/alt/Marbles_HD_1920x1080.jpg") no-repeat;
+    background-size:cover;
+    height: 100%;
+}
+
+/*//////////    For Retina Devices     ///////////*/
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi) {
+	html    {
+	  background: url(../images/alt/Marbles_Retina_2880x1800.jpg) no-repeat;
+    background-size:cover;
+	  height:100%;
+	}
+}
+
+/* /////////    For small tablets and smaller screens below   ///////////  */
+
+@media screen and (max-screen-width: 799px) {
+    html {
+        background: url(../images/alt/Marbles_Mobile_800x480.jpg) #000 no-repeat center center fixed;
+        height: 100%;
+        background-size:cover;
+    }
+}
+
+@media screen and (max-device-width: 400px) {
+        html {
+        background: url(../images/alt/Marbles_Mobile_800x480.jpg) #000 no-repeat center center fixed;
+        height: 100%;
+        background-size:cover;
+    }
+}
